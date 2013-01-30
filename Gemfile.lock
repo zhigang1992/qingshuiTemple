@@ -94,12 +94,25 @@ GEM
   remote: http://ruby.taobao.org/
   specs:
     atomic (1.0.1)
+    better_errors (0.3.2)
+      coderay (>= 1.0.0)
+      erubis (>= 2.7.0)
+    binding_of_caller (0.6.8)
     builder (3.1.4)
+    coderay (1.0.8)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    columnize (0.3.6)
     daemons (1.1.9)
+    debugger (1.2.4)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.1.1)
+      debugger-ruby_core_source (~> 1.1.7)
+    debugger-linecache (1.1.2)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.7)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     eventmachine (1.0.0)
@@ -122,12 +135,25 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.1)
     mime-types (1.19)
     minitest (4.5.0)
     moped (1.3.2)
     multi_json (1.5.0)
     origin (1.0.11)
     polyglot (0.3.3)
+    pry (0.9.11.4)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    pry-debugger (0.2.1)
+      debugger (~> 1.2.0)
+      pry (~> 0.9.10)
+    pry-remote (0.1.6)
+      pry (~> 0.9)
+      slop (~> 3.0)
+    pry-stack_explorer (0.4.7)
+      binding_of_caller (~> 0.6.8)
     rack (1.5.1)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -154,6 +180,7 @@ GEM
       activesupport (>= 3.0, < 4.1)
       railties (>= 3.0, < 4.1)
       slim (~> 1.3)
+    slop (3.4.3)
     sprockets (2.8.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -184,11 +211,17 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders!
   arel!
+  better_errors
+  binding_of_caller
   coffee-rails!
   factory_girl_rails (~> 4.2.0)
   jbuilder (~> 1.0.1)
   jquery-rails
   mongoid!
+  pry
+  pry-debugger
+  pry-remote
+  pry-stack_explorer
   rails!
   rspec-rails (~> 2.12.2)
   sass-rails!

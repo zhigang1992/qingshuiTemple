@@ -48,6 +48,16 @@ gem 'slim-rails'
 gem 'thin'
 
 group :test, :development do
+  # Test
   gem 'rspec-rails', '~> 2.12.2'
   gem 'factory_girl_rails', '~> 4.2.0'
+
+  # Debugger
+  gem 'pry'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
 end
