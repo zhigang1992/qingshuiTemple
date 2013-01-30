@@ -32,5 +32,10 @@ module QingshuiTemple
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
+    config.generators do |g|
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl, :dir => "spec/factories"
+    end
+
   end
 end

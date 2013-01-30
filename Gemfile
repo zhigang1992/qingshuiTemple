@@ -41,3 +41,13 @@ gem 'jbuilder', '~> 1.0.1'
 
 # Mongodb
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git', branch: '4.0.0-dev'
+
+gem 'slim-rails'
+
+# Server
+gem 'thin'
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.12.2'
+  gem 'factory_girl_rails', '~> 4.2.0'
+end
