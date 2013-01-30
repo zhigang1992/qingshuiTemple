@@ -149,6 +149,8 @@ GEM
     pry-debugger (0.2.1)
       debugger (~> 1.2.0)
       pry (~> 0.9.10)
+    pry-rails (0.2.2)
+      pry (>= 0.9.10)
     pry-remote (0.1.6)
       pry (~> 0.9)
       slop (~> 3.0)
@@ -220,6 +222,7 @@ DEPENDENCIES
   mongoid!
   pry
   pry-debugger
+  pry-rails
   pry-remote
   pry-stack_explorer
   rails!
