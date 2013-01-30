@@ -38,3 +38,6 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+
+# Mongodb
+gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git', branch: '4.0.0-dev'
